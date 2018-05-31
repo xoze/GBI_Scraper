@@ -1,0 +1,27 @@
+#!/usr/bin/python
+
+# Go to https://apps.twitter.com/ and create a new app. You only need read
+# permissions.
+
+# The API Key is listed as "Consumer Key (API Key)" and is under the
+# "Application Settings" section in the info page for the new app.
+# My key was about 25 characters long.
+API_key = "PUT_YOUR_API_KEY_HERE"
+
+# There should be a link, "manage keys and access tokens", after the API key.
+# That link leads to a page that has both the previous API Key and a longer
+# API Secret.
+API_secret = "PUT_YOUR_API_SECRET_HERE"
+
+####################################
+# Stuff that probably won't change #
+####################################
+
+# File to read old Tweets from and update with new Tweets.
+history_file = "gbi_history.json"
+
+# Twitter's internal user ID for @GBInfinite
+GBI_user_ID = 969398578497044480
+
+# Twitter limits the results for most recent tweet requests Tweets to 3,200
+max_tweet_request_size = 3200

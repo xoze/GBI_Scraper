@@ -102,3 +102,12 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+
+# OS files
+.DS_Store
+
+# config files
+gbi_conf.py
+
+# generated ranking of video popularity
+gbi_most_played.txt
